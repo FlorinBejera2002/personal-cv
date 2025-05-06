@@ -1,7 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { Github, Linkedin, Mail, MapPin, Download } from "lucide-react";
+import {
+	Github,
+	Linkedin,
+	Mail,
+	MapPin,
+	Download,
+	SquareArrowOutUpRight,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profilePicture from "../public/profilePicture.jpeg";
 
@@ -165,13 +172,13 @@ export default function CV() {
 						<div>
 							<div className="flex flex-wrap items-center justify-between">
 								<h4 className="text-lg font-semibold text-slate-700">
-									Computer Science
+									Full Stack Developer Course
 								</h4>
 								<span className="text-sm font-medium text-slate-500">
-									2020 - 2024
+									2022-2023
 								</span>
 							</div>
-							<p className="text-slate-600">University of Oradea</p>
+							<p className="text-slate-600">GoIT Academy</p>
 						</div>
 					</section>
 
@@ -184,61 +191,39 @@ export default function CV() {
 						<div className="mb-4">
 							<div className="flex flex-wrap items-center justify-between">
 								<h4 className="text-lg font-semibold text-slate-700">
-									E-commerce Platform
+									Arise for Christ Website
 								</h4>
 								<a
-									href="https://github.com/FlorinBejera2002/nextjs-ecommerce"
+									href="https://www.ariseforchrist.com/ro"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="flex items-center gap-1 text-sm text-blue-600 hover:underline"
 								>
-									<Github className="h-4 w-4" />
-									<span>GitHub</span>
+									<span>view</span>
+									<SquareArrowOutUpRight className="h-4 w-4" />
 								</a>
 							</div>
 							<p className="text-slate-600">
-								Next.js, TypeScript, Tailwind CSS, Prisma, MongoDB
+								Next.js, TypeScript, Tailwind CSS
 							</p>
 						</div>
 
 						<div className="mb-4">
 							<div className="flex flex-wrap items-center justify-between">
 								<h4 className="text-lg font-semibold text-slate-700">
-									Personal Portfolio
+									Ice Cream Website
 								</h4>
 								<a
-									href="https://github.com/FlorinBejera2002/portfolio"
+									href="https://dris11.github.io/Project-Ice-Cream/"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="flex items-center gap-1 text-sm text-blue-600 hover:underline"
 								>
-									<Github className="h-4 w-4" />
-									<span>GitHub</span>
+									<span>view</span>
+									<SquareArrowOutUpRight className="h-4 w-4" />
 								</a>
 							</div>
-							<p className="text-slate-600">
-								Next.js, TypeScript, Tailwind CSS, Framer Motion
-							</p>
-						</div>
-
-						<div>
-							<div className="flex flex-wrap items-center justify-between">
-								<h4 className="text-lg font-semibold text-slate-700">
-									Weather Dashboard
-								</h4>
-								<a
-									href="https://github.com/FlorinBejera2002/weather-app"
-									target="_blank"
-									rel="noopener noreferrer"
-									className="flex items-center gap-1 text-sm text-blue-600 hover:underline"
-								>
-									<Github className="h-4 w-4" />
-									<span>GitHub</span>
-								</a>
-							</div>
-							<p className="text-slate-600">
-								Next.js, TypeScript, Tailwind CSS, OpenWeather API
-							</p>
+							<p className="text-slate-600">HTML5, CSS3, JavaScript</p>
 						</div>
 					</section>
 
@@ -249,7 +234,7 @@ export default function CV() {
 						</h3>
 						<div className="flex gap-4 text-slate-600">
 							<span>Romanian (Native)</span>
-							<span>English (Fluent)</span>
+							<span>English (B1)</span>
 						</div>
 					</section>
 				</div>
