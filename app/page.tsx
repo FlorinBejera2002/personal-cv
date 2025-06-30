@@ -8,6 +8,7 @@ import {
 	MapPin,
 	Download,
 	SquareArrowOutUpRight,
+	Lock,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profilePicture from "../public/profilePicture.jpeg";
@@ -92,8 +93,11 @@ export default function CV() {
 							About Me
 						</h3>
 						<p className="text-slate-600">
-							Frontend Developer with experience in building responsive web
-							applications using Next.js, React, TypeScript, and Tailwind CSS.
+							I started learning programming in 2022 together with a friend named Vlad Chrisan, driven by the desire to grow professionally. Shortly after, I discovered a strong interest in web development, so I enrolled in a 12-month Full Stack Developer course.
+
+							During this year of learning, I was also working in construction. I spent my days on the construction site and my evenings studying late into the night, dedicating my free time to developing my skills in tech.
+
+							I enjoy design, which helps me bring an aesthetic touch to the projects I work on. Outside of programming, I like spending time in nature and staying active through sports — activities that help me relax and recharge.
 						</p>
 					</section>
 
@@ -225,6 +229,24 @@ export default function CV() {
 							</div>
 							<p className="text-slate-600">HTML5, CSS3, JavaScript</p>
 						</div>
+
+						<div className="mb-4">
+							<div className="flex flex-wrap items-center justify-between">
+								<h4 className="text-lg font-semibold text-slate-700">
+									Arise for Christ Portal
+								</h4>
+								<div className="flex items-center gap-1 text-sm text-red-600">
+									<span>private</span>
+									<Lock className="h-4 w-4" />
+								</div>
+
+							</div>
+							<p className="text-slate-600">
+								Vite JS, TypeScript, Tailwind CSS - Shadcn UI
+							</p>
+						</div>
+
+
 					</section>
 
 					{/* Languages */}
