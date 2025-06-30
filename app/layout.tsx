@@ -8,7 +8,9 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Florin Bejera | CV",
   description: "Professional CV of Florin Bejera, Frontend Developer",
-    generator: 'v0.dev'
+  icons: {
+    icon: "./letter-f.png",
+  },
 }
 
 export default function RootLayout({
