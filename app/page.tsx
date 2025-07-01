@@ -7,13 +7,13 @@ import {
 	Mail,
 	MapPin, ExternalLink,
 	Lock,
-	Calendar,
-	Code,
-	Globe,
+	Calendar, Globe,
 	Printer,
 	ChevronLeft,
 	ChevronRight,
-	X
+	X,
+	MonitorSmartphone,
+	Server
 } from 'lucide-react';
 import { useState } from 'react';
 import image from "../public/image.png";
@@ -76,7 +76,7 @@ export default function CV() {
 								Florin Bejera
 							</h1>
 							<h2 className="mb-6 text-center text-2xl font-light lg:text-left text-blue-100">
-								Dezvoltator Frontend
+								Programator Frontend
 							</h2>
 							<div className="flex flex-wrap justify-center gap-3 lg:justify-start">
 								<a
@@ -132,7 +132,7 @@ export default function CV() {
 							<h3 className="text-3xl font-bold text-slate-800">Despre Mine</h3>
 						</div>
 						<p className="text-slate-600 text-lg leading-relaxed">
-							Sunt dezvoltator Frontend și am început să învăț programare în 2022. Am lucrat în construcții și am studiat dezvoltarea web în timpul liber. Îmi place să lucrez la design-ul site-urilor și aplicațiilor. În timpul liber, îmi place să petrec timp în natură sau să fac sport.
+							Sunt pasionat de programare Frontend și am început să învăț în 2022. Am studiat dezvoltarea web timp de un an, după care am început să lucrez la Arise for Christ. Îmi place să lucrez la design-ul site-urilor și aplicațiilor. În timpul liber, îmi place să petrec timp în natură sau să fac sport.
 						</p>
 					</section>
 
@@ -144,12 +144,141 @@ export default function CV() {
 						</div>
 						<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
 							{[
-								'Next.js', 'React', 'TypeScript', 'JavaScript', 'Tailwind CSS',
-								'HTML5', 'CSS3', 'SCSS', 'Git', 'REST APIs', 'Design Responsiv', 'Supabase'
+								{
+									name: 'Next.js',
+									icon: (
+										<Image
+											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/nextdotjs.svg"
+											alt="Next.js"
+											width={16}
+											height={16}
+											className="text-blue-600"
+										/>
+									),
+								},
+								{
+									name: 'React',
+									icon: (
+										<Image
+											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/react.svg"
+											alt="React"
+											width={16}
+											height={16}
+											className="text-blue-600"
+										/>
+									),
+								},
+								{
+									name: 'TypeScript',
+									icon: (
+										<Image
+											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/typescript.svg"
+											alt="TypeScript"
+											width={16}
+											height={16}
+											className="text-blue-600"
+										/>
+									),
+								},
+								{
+									name: 'JavaScript',
+									icon: (
+										<Image
+											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/javascript.svg"
+											alt="JavaScript"
+											width={16}
+											height={16}
+											className="text-blue-600"
+										/>
+									),
+								},
+								{
+									name: 'Tailwind CSS',
+									icon: (
+										<Image
+											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/tailwindcss.svg"
+											alt="Tailwind CSS"
+											width={16}
+											height={16}
+											className="text-blue-600"
+										/>
+									),
+								},
+								{
+									name: 'HTML5',
+									icon: (
+										<Image
+											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/html5.svg"
+											alt="HTML5"
+											width={16}
+											height={16}
+											className="text-blue-600"
+										/>
+									),
+								},
+								{
+									name: 'CSS3',
+									icon: (
+										<Image
+											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/css3.svg"
+											alt="CSS3"
+											width={16}
+											height={16}
+											className="text-blue-600"
+										/>
+									),
+								},
+								{
+									name: 'SCSS',
+									icon: (
+										<Image
+											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/sass.svg"
+											alt="SCSS"
+											width={16}
+											height={16}
+											className="text-blue-600"
+										/>
+									),
+								},
+								{
+									name: 'Git',
+									icon: (
+										<Image
+											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/git.svg"
+											alt="Git"
+											width={16}
+											height={16}
+											className="text-blue-600"
+										/>
+									),
+								},
+								{
+									name: 'REST APIs',
+									icon: <Server className="h-4 w-4 text-blue-600" />,
+								},
+								{
+									name: 'Design Responsiv',
+									icon: <MonitorSmartphone className="h-4 w-4 text-blue-600" />,
+								},
+								{
+									name: 'Supabase',
+									icon: (
+										<Image
+											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/supabase.svg"
+											alt="Supabase"
+											width={16}
+											height={16}
+											className="text-blue-600"
+										/>
+									),
+								},
 							].map((skill) => (
-								<span key={skill} className="flex items-center gap-2 rounded-lg bg-gradient-to-r from-blue-50 to-slate-50 px-4 py-3 text-sm font-medium text-slate-700 border border-slate-200">
-									<Code className="h-4 w-4 text-blue-600" />
-									{skill}
+								<span
+									key={skill.name}
+									className="flex items-center gap-2 rounded-lg bg-gradient-to-r from-blue-50 to-slate-50 px-4 py-3 text-sm font-medium text-slate-700 border border-slate-200"
+								>
+									{skill.icon}
+									{skill.name}
 								</span>
 							))}
 						</div>
@@ -165,35 +294,8 @@ export default function CV() {
 						<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-6 border border-slate-200 mb-6">
 							<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
 								<div>
-									<p className="text-blue-600 font-medium mb-1"> Academia GoIT</p>
-									<h4 className="text-xl font-semibold text-slate-700">Curs Dezvoltator Full Stack</h4>
-								</div>
-								<div className="flex items-center gap-2 text-blue-600 font-medium">
-									<Calendar className="h-4 w-4" />
-									<span>Ianuarie 2022 - Decembrie 2022</span>
-								</div>
-
-							</div>
-							<p className="text-slate-600 mb-3">
-								În cadrul cursului am învățat limbajele HTML, CSS, SCSS, JavaScript și Node.js, însă Node.js l-am studiat doar pe scurt și nu îl stăpânesc încă.
-							</p>
-
-							<p className="text-slate-600 mb-3">
-								De asemenea, am avut ocazia să învăț să lucrez în echipă.							</p>
-
-
-							<p className="text-slate-600 mb-3">
-								Pe lângă curs, am învățat mult și alături de câțiva prieteni care m-au ghidat în alegerea materialelor și ce să studiez.							</p>
-
-
-
-						</div>
-
-						<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-6 border border-slate-200">
-							<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-								<div>
 									<p className="text-blue-600 font-medium mb-1">Organizația Arise for Christ</p>
-									<h4 className="text-xl font-semibold text-slate-700">Dezvoltator Frontend</h4>
+									<h4 className="text-xl font-semibold text-slate-700">Programator Frontend</h4>
 								</div>
 								<div className="flex items-center gap-2 text-blue-600 font-medium">
 									<Calendar className="h-4 w-4" />
@@ -202,9 +304,35 @@ export default function CV() {
 							</div>
 
 							<div className="space-y-6">
-								{/*  Rugăciune */}
+								<p className="text-slate-600 mb-3">
+									In organizația Arise for Christ lucrez activ la:
+								</p>
+								{/* Portalul intern (CMS) */}
+
+								<h5 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
+									<div className="w-2 h-2 bg-green-500 rounded-full"></div>
+									Portalul intern (CMS)
+								</h5>
+								<ul className="text-sm text-slate-600 space-y-1 ml-4">
+									<li>• Lucrez la dezvoltarea unei platforme CMS (Content Management System) menite să faciliteze administrarea eficientă a conținutului și a datelor organizației.</li>
+									<li>• Am implementat funcționalități CRUD (Create, Read, Update, Delete) pentru diverse tipuri de informații: colaboratori, formulare, cereri de evanghelizare, statistici etc.</li>
+									<li>• Folosim React Query pentru o experiență fluidă, stocând datele în cache pentru citire rapidă și minimizarea apelurilor către backend.</li>
+									<li>• Portalul este conectat la un backend personalizat, cu baze de date gestionate prin Supabase.</li>
+								</ul>
+								{/* Website-ul principal */}
 								<h5 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
 									<div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+									Website-ul principal
+								</h5>
+								<ul className="text-sm text-slate-600 space-y-1 ml-4">
+									<li>• Am construit site-ul de la zero folosind React cu Next.js, pentru o arhitectură modernă și performantă.</li>
+									<li>• Pentru stilizare, utilizez Tailwind CSS, care permite dezvoltare rapidă și un design responsive, adaptat tuturor dispozitivelor.</li>
+									<li>• M-am asigurat că designul este curat și în concordanță cu valorile organizației.</li>
+								</ul>
+
+								{/* Rugăciune */}
+								<h5 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
+									<div className="w-2 h-2 bg-purple-500 rounded-full"></div>
 									Rugăciune
 								</h5>
 								<p className="text-slate-600 mb-3">
@@ -214,17 +342,17 @@ export default function CV() {
 									<p className="text-sm text-slate-700"><span className="font-medium">Funcționalități principale:</span></p>
 									<ul className="text-sm text-slate-600 space-y-1 ml-4">
 										<li>• Afișarea unei liste cu toate rugăciunile adăugate</li>
-										<li>• Buton „Mă rog" pentru a arăta susținerea față de un motiv de rugăciune</li>
+										<li>• Buton „Mă rog” pentru a arăta susținerea față de un motiv de rugăciune</li>
 										<li>• Autentificare prin Google sau Facebook</li>
-										<li>• Formular pentru adăugarea unui motiv de rugăciune cu opțiunea de a rămâne anonim</li>
-										<li>• Administrarea conținutului: adaugă răspunsuri, șterge răspunsuri sau șterge rugăciunea</li>
-										<li>• Gestionarea datelor prin backend dedicat cu stocarea în tabele Supabase</li>
+										<li>• Formular pentru adăugarea unui motiv de rugăciune, cu opțiunea de a rămâne anonim</li>
+										<li>• Administrarea conținutului: adăugare și ștergere de răspunsuri sau rugăciuni</li>
+										<li>• Gestionarea datelor prin backend dedicat, cu stocare în tabele Supabase</li>
 									</ul>
 								</div>
 
-								{/* Proiect Colaborează cu Echipa */}
+								{/* Colaborează cu Echipa Arise for Christ */}
 								<h5 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
-									<div className="w-2 h-2 bg-green-500 rounded-full"></div>
+									<div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
 									Colaborează cu Echipa Arise for Christ
 								</h5>
 								<p className="text-slate-600 mb-3">
@@ -234,8 +362,8 @@ export default function CV() {
 									<p className="text-sm text-slate-700"><span className="font-medium">Funcționalități principale:</span></p>
 									<ul className="text-sm text-slate-600 space-y-1 ml-4">
 										<li>• Formular cu 20 de întrebări implementat pe site</li>
-										<li>• Întrebările organizate pe slide-uri și categorii pentru experiență structurată</li>
-										<li>• Conectare la backend cu stocarea datelor în tabele Supabase</li>
+										<li>• Întrebările sunt organizate pe slide-uri și categorii, pentru o experiență structurată</li>
+										<li>• Conectare la backend, cu stocarea datelor în tabele Supabase</li>
 										<li>• Afișarea datelor colaboratorilor în Portalul Arise for Christ</li>
 										<li>• Componentă reutilizabilă pentru adăugarea și actualizarea colaboratorilor</li>
 										<li>• Funcționalități de ștergere și generare de PDF-uri cu informațiile colaboratorilor</li>
@@ -267,8 +395,29 @@ export default function CV() {
 								</div>
 							</div>
 						</div>
-					</section>
 
+						<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-6 border border-slate-200">
+							<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+								<div>
+									<p className="text-blue-600 font-medium mb-1">Academia GoIT</p>
+									<h4 className="text-xl font-semibold text-slate-700">Curs Programator Full Stack</h4>
+								</div>
+								<div className="flex items-center gap-2 text-blue-600 font-medium">
+									<Calendar className="h-4 w-4" />
+									<span>Ianuarie 2022 - Decembrie 2022</span>
+								</div>
+							</div>
+							<p className="text-slate-600 mb-3">
+								În cadrul cursului am învățat limbajele HTML, CSS, SCSS, JavaScript și Node.js.
+							</p>
+							<p className="text-slate-600 mb-3">
+								De asemenea, am avut ocazia să învăț să lucrez în echipă.
+							</p>
+							<p className="text-slate-600 mb-3">
+								Pe lângă curs, am învățat mult și alături de câțiva prieteni care m-au ghidat în alegerea materialelor și ce să studiez.
+							</p>
+						</div>
+					</section>
 					{/* Certificări */}
 					<section className="mb-10">
 						<div className="flex items-center gap-3 mb-6">
@@ -277,7 +426,7 @@ export default function CV() {
 						</div>
 						<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-6 border border-slate-200">
 							<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-								<h4 className="text-xl font-semibold text-slate-700">Curs Dezvoltator Full Stack</h4>
+								<h4 className="text-xl font-semibold text-slate-700">Curs Programator Full Stack</h4>
 								<div className="flex items-center gap-2 text-blue-600 font-medium">
 									<Calendar className="h-4 w-4" />
 									<span>2022-2023</span>
@@ -349,7 +498,7 @@ export default function CV() {
 									</div>
 								</div>
 								<p className="text-slate-600 leading-relaxed">
-									Catalog de filme, realizat inpreuna cu echipa din cadrul cursului de Dezvoltator Full Stack.
+									Catalog de filme, realizat inpreuna cu echipa din cadrul cursului de Programator Full Stack.
 								</p>
 								<p className="text-xs text-slate-500 mt-2">URL: https://cristina-irina.github.io/Filmoteka/index.html</p>
 							</div>
@@ -463,7 +612,7 @@ export default function CV() {
 									</div>
 								</div>
 								<p className="text-slate-600 leading-relaxed">
-									Pagină de aterizare statică cu design atractiv creată în timpul cursului de Dezvoltator Full Stack.
+									Pagină de aterizare statică cu design atractiv creată în timpul cursului de Programator Full Stack.
 									Am lucrat cu o echipă la structura HTML, animații CSS și interactivitate JavaScript.
 								</p>
 								<p className="text-xs text-slate-500 mt-2">URL: https://dris11.github.io/Project-Ice-Cream/</p>
@@ -492,9 +641,10 @@ export default function CV() {
 
 				{/* Subsol */}
 				<footer className="bg-gradient-to-r from-slate-100 to-blue-100 p-6 text-center text-sm text-slate-600 print:hidden border-t border-slate-200">
-					<p className="font-medium">© {new Date().getFullYear()} Florin Bejera - Dezvoltator Frontend</p>
+					<p className="font-medium">© {new Date().getFullYear()} Florin Bejera - Programator Frontend</p>
 					<p className="mt-1 text-xs">Construit cu Next.js și Tailwind CSS</p>
 				</footer>
+
 			</div>
 
 			{/* Modal Imagine */}
