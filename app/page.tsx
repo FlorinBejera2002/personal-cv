@@ -23,7 +23,7 @@ export default function CV() {
 		<main className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-8 print:py-0 print:bg-white">
 			<div className="container mx-auto max-w-5xl bg-white shadow-2xl print:shadow-none rounded-lg overflow-hidden">
 				{/* Header */}
-				<header className="relative bg-gradient-to-r from-slate-800 via-slate-700 to-blue-800 px-8 py-16 text-white">
+				<header className="relative bg-slate-800 px-8 py-16 text-white">
 					<div className="flex flex-col lg:flex-row lg:items-center gap-8">
 						<div className="flex justify-center lg:justify-start">
 							<div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-white shadow-xl">
