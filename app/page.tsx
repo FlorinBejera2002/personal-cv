@@ -30,11 +30,11 @@ export default function CV() {
 
 	// Imagini de exemplu - le vei înlocui cu imaginile tale reale
 	const experienceImages = [
-		{ src: image, alt: "Interfață Zid de Rugăciune", title: "Zid de Rugăciune - Interfață Principală" },
-		{ src: image1, alt: "Sistem de Autentificare", title: "Autentificare Google & Facebook" },
-		{ src: image2, alt: "Formular de Colaborare", title: "Formular de Colaborare cu 20 de Întrebări" },
-		{ src: image3, alt: "Portal Admin", title: "Tablou de Bord al Portalului Arise for Christ" },
-		{ src: image4, alt: "Generare PDF", title: "Funcționalitate de Generare PDF" }
+		{ src: image1, alt: "Formular de Colaborare", title: "Formular de Colaborare cu 20 de Întrebări" },
+		{ src: image, alt: "Portal Colaborare", title: "Afisarea Colaboratorilor în Portalul Arise for Christ" },
+		{ src: image2, alt: "Rugăciune", title: "Zid de Rugăciune - Interfață Principală" },
+		{ src: image4, alt: "Sistem de Autentificare", title: "Autentificare Google & Facebook" },
+		{ src: image3, alt: "Formular adauga rugaciune", title: "Formular de Adăugare Rugăciune" },
 	];
 
 	const openImageModal = (imageIndex: any) => {
