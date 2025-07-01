@@ -5,13 +5,12 @@ import {
 	Github,
 	Linkedin,
 	Mail,
-	MapPin,
-	Download,
-	ExternalLink,
+	MapPin, ExternalLink,
 	Lock,
 	Calendar,
 	Code,
-	Globe
+	Globe,
+	Printer
 } from 'lucide-react';
 import profilePicture from "../public/profilePicture.jpeg";
 import Image from "next/image";
@@ -81,8 +80,8 @@ export default function CV() {
 							variant="outline"
 							size="sm" className="flex items-center gap-2 rounded-lg bg-white/20 backdrop-blur-sm px-4 py-2 text-sm font-medium text-white hover:bg-white/30 transition-all duration-200 border border-white/30"
 						>
-							<Download className="h-4 w-4" />
-							Download CV
+							<Printer className="h-4 w-4" />
+							Print CV
 						</Button>
 					</div>
 				</header>
