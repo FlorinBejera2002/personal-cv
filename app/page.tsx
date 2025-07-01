@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import profilePicture from "../public/profilePicture.jpeg";
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function CV() {
 
@@ -42,7 +43,7 @@ export default function CV() {
 								Frontend Developer
 							</h2>
 							<div className="flex flex-wrap justify-center gap-3 lg:justify-start">
-								<a
+								<Link
 									href="https://www.linkedin.com/in/florin-bejera-1b213b263/"
 									target="_blank"
 									rel="noopener noreferrer"
@@ -50,8 +51,8 @@ export default function CV() {
 								>
 									<Linkedin className="h-4 w-4" />
 									<span>LinkedIn</span>
-								</a>
-								<a
+								</Link>
+								<Link
 									href="https://github.com/FlorinBejera2002"
 									target="_blank"
 									rel="noopener noreferrer"
@@ -59,14 +60,14 @@ export default function CV() {
 								>
 									<Github className="h-4 w-4" />
 									<span>GitHub</span>
-								</a>
-								<a
+								</Link>
+								<Link
 									href="mailto:florinbejera@gmail.com"
 									className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-sm hover:bg-white/25 transition-all duration-200 border border-white/20"
 								>
 									<Mail className="h-4 w-4" />
 									<span>Email</span>
-								</a>
+								</Link>
 								<span className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-sm border border-white/20">
 									<MapPin className="h-4 w-4" />
 									<span>Timișoara, Romania</span>
@@ -110,7 +111,7 @@ export default function CV() {
 								'Next.js', 'React', 'TypeScript', 'JavaScript', 'Tailwind CSS',
 								'HTML5', 'CSS3', 'SCSS', 'Git', 'REST APIs', 'Responsive Design', 'Supabase'
 							].map((skill) => (
-								<span key={skill} className="flex items-center gap-2 rounded-lg bg-gradient-to-r from-blue-50 to-slate-50 px-4 py-3 text-sm font-medium text-slate-700 border border-slate-200 hover:shadow-md transition-shadow duration-200">
+								<span key={skill} className="flex items-center gap-2 rounded-lg bg-gradient-to-r from-blue-50 to-slate-50 px-4 py-3 text-sm font-medium text-slate-700 border border-slate-200">
 									<Code className="h-4 w-4 text-blue-600" />
 									{skill}
 								</span>
@@ -138,11 +139,11 @@ export default function CV() {
 						</div>
 					</section>
 
-					{/* Education */}
+					{/* Certifications */}
 					<section className="mb-10">
 						<div className="flex items-center gap-3 mb-6">
 							<div className="h-8 w-1 bg-gradient-to-b from-blue-600 to-slate-600 rounded-full"></div>
-							<h3 className="text-3xl font-bold text-slate-800">Education & Certifications</h3>
+							<h3 className="text-3xl font-bold text-slate-800">Certifications</h3>
 						</div>
 						<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-6 border border-slate-200">
 							<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
@@ -160,7 +161,7 @@ export default function CV() {
 					<section className="mb-10">
 						<div className="flex items-center gap-3 mb-6">
 							<div className="h-8 w-1 bg-gradient-to-b from-blue-600 to-slate-600 rounded-full"></div>
-							<h3 className="text-3xl font-bold text-slate-800">Featured Projects</h3>
+							<h3 className="text-3xl font-bold text-slate-800"> Projects</h3>
 						</div>
 
 						<div className="grid gap-6">
@@ -174,8 +175,7 @@ export default function CV() {
 									</div>
 								</div>
 								<p className="text-slate-600 leading-relaxed">
-									Internal portal for member and event management. Built with Vite, TypeScript, and Shadcn UI
-									for enhanced user experience and type safety.
+									Internal portal for efficient data management, built with Vite and TypeScript, using the Shadcn interface. Integrated with backend for real-time updates.
 								</p>
 							</div>
 
@@ -184,7 +184,7 @@ export default function CV() {
 								<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
 									<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Arise for Christ Website</h4>
 									<div className="flex items-center gap-4">
-										<a
+										<Link
 											href="https://www.ariseforchrist.com/ro"
 											target="_blank"
 											rel="noopener noreferrer"
@@ -193,7 +193,7 @@ export default function CV() {
 											<Globe className="h-4 w-4" />
 											<span>Live Site</span>
 											<ExternalLink className="h-4 w-4" />
-										</a>
+										</Link>
 									</div>
 								</div>
 								<p className="text-slate-600 leading-relaxed">
@@ -208,7 +208,7 @@ export default function CV() {
 								<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
 									<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Teens Arise for Christ</h4>
 									<div className="flex items-center gap-4">
-										<a
+										<Link
 											href="https://teens-ariseforchrist.netlify.app/en"
 											target="_blank"
 											rel="noopener noreferrer"
@@ -217,12 +217,11 @@ export default function CV() {
 											<Globe className="h-4 w-4" />
 											<span>Live Site</span>
 											<ExternalLink className="h-4 w-4" />
-										</a>
+										</Link>
 									</div>
 								</div>
 								<p className="text-slate-600 leading-relaxed">
-									Youth-focused platform for Christian teens with interactive features and modern design.
-									Built with responsive layout and engaging user interface.
+									Community platform for teens to grow in faith through resources and events.
 								</p>
 								<p className="text-xs text-slate-500 mt-2">URL: https://teens-ariseforchrist.netlify.app</p>
 							</div>
@@ -232,7 +231,7 @@ export default function CV() {
 								<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
 									<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Philippine Arise for Christ</h4>
 									<div className="flex items-center gap-4">
-										<a
+										<Link
 											href="https://philippine-ariseforchrist.netlify.app/en"
 											target="_blank"
 											rel="noopener noreferrer"
@@ -241,12 +240,11 @@ export default function CV() {
 											<Globe className="h-4 w-4" />
 											<span>Live Site</span>
 											<ExternalLink className="h-4 w-4" />
-										</a>
+										</Link>
 									</div>
 								</div>
 								<p className="text-slate-600 leading-relaxed">
-									Regional website for Philippine Christian community with localized content and
-									culturally adapted design elements.
+									Christian platform dedicated to the Filipino community, offering spiritual resources and events.
 								</p>
 								<p className="text-xs text-slate-500 mt-2">URL: https://philippine-ariseforchrist.netlify.app</p>
 							</div>
@@ -256,7 +254,7 @@ export default function CV() {
 								<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
 									<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Hebron AFC Home</h4>
 									<div className="flex items-center gap-4">
-										<a
+										<Link
 											href="https://hebronafchome.netlify.app/"
 											target="_blank"
 											rel="noopener noreferrer"
@@ -265,12 +263,11 @@ export default function CV() {
 											<Globe className="h-4 w-4" />
 											<span>Live Site</span>
 											<ExternalLink className="h-4 w-4" />
-										</a>
+										</Link>
 									</div>
 								</div>
 								<p className="text-slate-600 leading-relaxed">
-									Community platform with comprehensive information architecture and user-friendly navigation.
-									Focus on accessibility and performance optimization.
+									Simple and professional website for an American company.
 								</p>
 								<p className="text-xs text-slate-500 mt-2">URL: https://hebronafchome.netlify.app/</p>
 							</div>
@@ -278,9 +275,9 @@ export default function CV() {
 							{/* Amicus Timisoara Form */}
 							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-6 border border-slate-200 transition-shadow duration-300">
 								<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
-									<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Amicus Timisoara Form</h4>
+									<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">AMiCUS Timisoara Form</h4>
 									<div className="flex items-center gap-4">
-										<a
+										<Link
 											href="https://amicustimisoara.netlify.app/"
 											target="_blank"
 											rel="noopener noreferrer"
@@ -289,22 +286,21 @@ export default function CV() {
 											<Globe className="h-4 w-4" />
 											<span>Live Site</span>
 											<ExternalLink className="h-4 w-4" />
-										</a>
+										</Link>
 									</div>
 								</div>
 								<p className="text-slate-600 leading-relaxed">
-									Interactive form application with Supabase backend integration. Features dynamic data validation,
-									real-time database operations, and comprehensive table management system.
+									Simple registration form integrated with Supabase for data collection.
 								</p>
 								<p className="text-xs text-slate-500 mt-2">URL: https://amicustimisoara.netlify.app/</p>
 							</div>
 
 							{/* Ice Cream Website */}
-							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-6 border border-slate-200 transition-shadow duration-300">
+							{/* <div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-6 border border-slate-200 transition-shadow duration-300">
 								<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
 									<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Ice Cream Website</h4>
 									<div className="flex items-center gap-4">
-										<a
+										<Link
 											href="https://dris11.github.io/Project-Ice-Cream/"
 											target="_blank"
 											rel="noopener noreferrer"
@@ -313,7 +309,7 @@ export default function CV() {
 											<Globe className="h-4 w-4" />
 											<span>Live Site</span>
 											<ExternalLink className="h-4 w-4" />
-										</a>
+										</Link>
 									</div>
 								</div>
 								<p className="text-slate-600 leading-relaxed">
@@ -321,7 +317,7 @@ export default function CV() {
 									Worked on HTML structure, CSS animations, and JavaScript interactivity.
 								</p>
 								<p className="text-xs text-slate-500 mt-2">URL: https://dris11.github.io/Project-Ice-Cream/</p>
-							</div>
+							</div> */}
 
 
 						</div>
