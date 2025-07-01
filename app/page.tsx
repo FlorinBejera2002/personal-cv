@@ -1,50 +1,52 @@
 "use client";
 
-import Image from "next/image";
+import { Button } from '@/components/ui/button';
 import {
 	Github,
 	Linkedin,
 	Mail,
 	MapPin,
 	Download,
-	SquareArrowOutUpRight,
+	ExternalLink,
 	Lock,
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
+	Calendar,
+	Code,
+	Globe
+} from 'lucide-react';
 import profilePicture from "../public/profilePicture.jpeg";
+import Image from "next/image";
 
 export default function CV() {
+
 	return (
-		<main className="min-h-screen bg-gray-50 py-10 print:py-0 print:bg-white">
-			<div className="container mx-auto max-w-4xl bg-white shadow-lg print:shadow-none">
+		<main className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-8 print:py-0 print:bg-white">
+			<div className="container mx-auto max-w-5xl bg-white shadow-2xl print:shadow-none rounded-lg overflow-hidden">
 				{/* Header */}
-				<header className="relative bg-slate-800 px-6 py-12 text-white">
-					<div className="flex flex-col md:flex-row md:items-center">
-						<div className="mb-6 flex justify-center md:mb-0 md:mr-8 md:justify-start">
-							<div className="relative h-40 w-40 overflow-hidden rounded-full border-4 border-white">
+				<header className="relative bg-gradient-to-r from-slate-800 via-slate-700 to-blue-800 px-8 py-16 text-white">
+					<div className="flex flex-col lg:flex-row lg:items-center gap-8">
+						<div className="flex justify-center lg:justify-start">
+							<div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-white shadow-xl">
 								<Image
 									src={profilePicture}
 									alt="Florin Bejera"
-									width={160}
-									height={160}
 									className="object-cover"
 									priority
 								/>
 							</div>
 						</div>
-						<div>
-							<h1 className="mb-2 text-center text-4xl font-bold md:text-left">
+						<div className="flex-1">
+							<h1 className="mb-3 text-center text-5xl font-bold lg:text-left tracking-tight">
 								Florin Bejera
 							</h1>
-							<h2 className="mb-6 text-center text-xl font-light md:text-left">
+							<h2 className="mb-6 text-center text-2xl font-light lg:text-left text-blue-100">
 								Frontend Developer
 							</h2>
-							<div className="flex flex-wrap justify-center gap-3 md:justify-start">
+							<div className="flex flex-wrap justify-center gap-3 lg:justify-start">
 								<a
 									href="https://www.linkedin.com/in/florin-bejera-1b213b263/"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex items-center gap-1 rounded-full bg-white/10 px-3 py-1 text-sm hover:bg-white/20"
+									className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-sm hover:bg-white/25 transition-all duration-200 border border-white/20"
 								>
 									<Linkedin className="h-4 w-4" />
 									<span>LinkedIn</span>
@@ -53,219 +55,303 @@ export default function CV() {
 									href="https://github.com/FlorinBejera2002"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex items-center gap-1 rounded-full bg-white/10 px-3 py-1 text-sm hover:bg-white/20"
+									className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-sm hover:bg-white/25 transition-all duration-200 border border-white/20"
 								>
 									<Github className="h-4 w-4" />
 									<span>GitHub</span>
 								</a>
 								<a
 									href="mailto:florinbejera@gmail.com"
-									className="flex items-center gap-1 rounded-full bg-white/10 px-3 py-1 text-sm hover:bg-white/20"
+									className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-sm hover:bg-white/25 transition-all duration-200 border border-white/20"
 								>
 									<Mail className="h-4 w-4" />
 									<span>Email</span>
 								</a>
-								<span className="flex items-center gap-1 rounded-full bg-white/10 px-3 py-1 text-sm">
+								<span className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-sm border border-white/20">
 									<MapPin className="h-4 w-4" />
-									<span>Timișoara, Timiș, Romania</span>
+									<span>Timișoara, Romania</span>
 								</span>
 							</div>
 						</div>
 					</div>
-					<div className="absolute right-4 top-4 print:hidden">
+					<div className="absolute right-6 top-6 print:hidden">
 						<Button
 							onClick={() => window.print()}
 							variant="outline"
-							size="sm"
-							className="bg-white text-slate-800 hover:bg-gray-100"
+							size="sm" className="flex items-center gap-2 rounded-lg bg-white/20 backdrop-blur-sm px-4 py-2 text-sm font-medium text-white hover:bg-white/30 transition-all duration-200 border border-white/30"
 						>
-							<Download className="mr-2 h-4 w-4" />
-							Print CV
+							<Download className="h-4 w-4" />
+							Download CV
 						</Button>
 					</div>
 				</header>
 
 				{/* Main Content */}
-				<div className="p-6">
+				<div className="p-8 lg:p-12">
 					{/* About Me */}
-					<section className="mb-6">
-						<h3 className="mb-3 border-b border-slate-200 pb-2 text-2xl font-bold text-slate-800">
-							About Me
-						</h3>
-						<p className="text-slate-600">
-							I started learning programming in 2022 together with a friend named Vlad Chrisan, driven by the desire to grow professionally. Shortly after, I discovered a strong interest in web development, so I enrolled in a 12-month Full Stack Developer course.
-
-							During this year of learning, I was also working in construction. I spent my days on the construction site and my evenings studying late into the night, dedicating my free time to developing my skills in tech.
-
-							I enjoy design, which helps me bring an aesthetic touch to the projects I work on. Outside of programming, I like spending time in nature and staying active through sports — activities that help me relax and recharge.
+					<section className="mb-10">
+						<div className="flex items-center gap-3 mb-6">
+							<div className="h-8 w-1 bg-gradient-to-b from-blue-600 to-slate-600 rounded-full"></div>
+							<h3 className="text-3xl font-bold text-slate-800">About Me</h3>
+						</div>
+						<p className="text-slate-600 text-lg leading-relaxed">
+							I'm a Frontend Developer and started learning programming in 2022. I was working in construction and studied web development in my free time. I enjoy working on the design of websites and apps. In my free time, I like spending time in nature or doing sports.
 						</p>
 					</section>
 
 					{/* Skills */}
-					<section className="mb-6">
-						<h3 className="mb-3 border-b border-slate-200 pb-2 text-2xl font-bold text-slate-800">
-							Skills
-						</h3>
-						<div className="flex flex-wrap gap-2">
-							<span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700">
-								Next.js
-							</span>
-							<span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700">
-								React
-							</span>
-							<span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700">
-								TypeScript
-							</span>
-							<span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700">
-								JavaScript
-							</span>
-							<span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700">
-								Tailwind CSS
-							</span>
-							<span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700">
-								HTML5
-							</span>
-							<span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700">
-								CSS3
-							</span>
-							<span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700">
-								SCSS
-							</span>
-							<span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700">
-								Git
-							</span>
-							<span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700">
-								REST APIs
-							</span>
-							<span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700">
-								Responsive Design
-							</span>
+					<section className="mb-10">
+						<div className="flex items-center gap-3 mb-6">
+							<div className="h-8 w-1 bg-gradient-to-b from-blue-600 to-slate-600 rounded-full"></div>
+							<h3 className="text-3xl font-bold text-slate-800">Technical Skills</h3>
+						</div>
+						<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+							{[
+								'Next.js', 'React', 'TypeScript', 'JavaScript', 'Tailwind CSS',
+								'HTML5', 'CSS3', 'SCSS', 'Git', 'REST APIs', 'Responsive Design', 'Supabase'
+							].map((skill) => (
+								<span key={skill} className="flex items-center gap-2 rounded-lg bg-gradient-to-r from-blue-50 to-slate-50 px-4 py-3 text-sm font-medium text-slate-700 border border-slate-200 hover:shadow-md transition-shadow duration-200">
+									<Code className="h-4 w-4 text-blue-600" />
+									{skill}
+								</span>
+							))}
 						</div>
 					</section>
 
 					{/* Experience */}
-					<section className="mb-6">
-						<h3 className="mb-3 border-b border-slate-200 pb-2 text-2xl font-bold text-slate-800">
-							Experience
-						</h3>
-						<div className="mb-4">
-							<div className="flex flex-wrap items-center justify-between">
-								<h4 className="text-lg font-semibold text-slate-700">
-									Frontend Developer
-								</h4>
-								<span className="text-sm font-medium text-slate-500">
-									Jan 2023 - Present
-								</span>
+					<section className="mb-10">
+						<div className="flex items-center gap-3 mb-6">
+							<div className="h-8 w-1 bg-gradient-to-b from-blue-600 to-slate-600 rounded-full"></div>
+							<h3 className="text-3xl font-bold text-slate-800">Experience</h3>
+						</div>
+						<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-6 border border-slate-200">
+							<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
+								<h4 className="text-xl font-semibold text-slate-700">Frontend Developer</h4>
+								<div className="flex items-center gap-2 text-blue-600 font-medium">
+									<Calendar className="h-4 w-4" />
+									<span>Feb 2023 - Present</span>
+								</div>
 							</div>
-							<p className="mb-2 text-slate-600">Freelance</p>
-							<ul className="ml-5 list-disc space-y-1 text-slate-600">
-								<li>
-									Developed responsive web applications using Next.js and React
-								</li>
-								<li>Implemented TypeScript for type-safe code</li>
-								<li>Created modern UI designs with Tailwind CSS</li>
-							</ul>
+							<p className="text-slate-600">
+								Developing modern, responsive web applications with focus on user experience and performance optimization.
+							</p>
 						</div>
 					</section>
 
 					{/* Education */}
-					<section className="mb-6">
-						<h3 className="mb-3 border-b border-slate-200 pb-2 text-2xl font-bold text-slate-800">
-							Education
-						</h3>
-						<div>
-							<div className="flex flex-wrap items-center justify-between">
-								<h4 className="text-lg font-semibold text-slate-700">
-									Full Stack Developer Course
-								</h4>
-								<span className="text-sm font-medium text-slate-500">
-									2022-2023
-								</span>
+					<section className="mb-10">
+						<div className="flex items-center gap-3 mb-6">
+							<div className="h-8 w-1 bg-gradient-to-b from-blue-600 to-slate-600 rounded-full"></div>
+							<h3 className="text-3xl font-bold text-slate-800">Education & Certifications</h3>
+						</div>
+						<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-6 border border-slate-200">
+							<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+								<h4 className="text-xl font-semibold text-slate-700">Full Stack Developer Course</h4>
+								<div className="flex items-center gap-2 text-blue-600 font-medium">
+									<Calendar className="h-4 w-4" />
+									<span>2022-2023</span>
+								</div>
 							</div>
-							<p className="text-slate-600">GoIT Academy</p>
+							<p className="text-slate-600 font-medium">GoIT Academy</p>
 						</div>
 					</section>
 
 					{/* Projects */}
-					<section className="mb-6">
-						<h3 className="mb-3 border-b border-slate-200 pb-2 text-2xl font-bold text-slate-800">
-							Projects
-						</h3>
-
-						<div className="mb-4">
-							<div className="flex flex-wrap items-center justify-between">
-								<h4 className="text-lg font-semibold text-slate-700">
-									Arise for Christ Website
-								</h4>
-								<a
-									href="https://www.ariseforchrist.com/ro"
-									target="_blank"
-									rel="noopener noreferrer"
-									className="flex items-center gap-1 text-sm text-blue-600 hover:underline"
-								>
-									<span>view</span>
-									<SquareArrowOutUpRight className="h-4 w-4" />
-								</a>
-							</div>
-							<p className="text-slate-600">
-								Next.js, TypeScript, Tailwind CSS
-							</p>
+					<section className="mb-10">
+						<div className="flex items-center gap-3 mb-6">
+							<div className="h-8 w-1 bg-gradient-to-b from-blue-600 to-slate-600 rounded-full"></div>
+							<h3 className="text-3xl font-bold text-slate-800">Featured Projects</h3>
 						</div>
 
-						<div className="mb-4">
-							<div className="flex flex-wrap items-center justify-between">
-								<h4 className="text-lg font-semibold text-slate-700">
-									Ice Cream Website
-								</h4>
-								<a
-									href="https://dris11.github.io/Project-Ice-Cream/"
-									target="_blank"
-									rel="noopener noreferrer"
-									className="flex items-center gap-1 text-sm text-blue-600 hover:underline"
-								>
-									<span>view</span>
-									<SquareArrowOutUpRight className="h-4 w-4" />
-								</a>
-							</div>
-							<p className="text-slate-600">HTML5, CSS3, JavaScript</p>
-						</div>
-
-						<div className="mb-4">
-							<div className="flex flex-wrap items-center justify-between">
-								<h4 className="text-lg font-semibold text-slate-700">
-									Arise for Christ Portal
-								</h4>
-								<div className="flex items-center gap-1 text-sm text-red-600">
-									<span>private</span>
-									<Lock className="h-4 w-4" />
+						<div className="grid gap-6">
+							{/* Arise for Christ Portal */}
+							<div className="bg-gradient-to-r from-slate-50 to-red-50 rounded-xl p-6 border border-slate-200">
+								<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+									<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Arise for Christ Portal</h4>
+									<div className="flex items-center gap-2 text-red-600 font-medium">
+										<Lock className="h-4 w-4" />
+										<span>Private</span>
+									</div>
 								</div>
-
+								<p className="text-slate-600 leading-relaxed">
+									Internal portal for member and event management. Built with Vite, TypeScript, and Shadcn UI
+									for enhanced user experience and type safety.
+								</p>
 							</div>
-							<p className="text-slate-600">
-								Vite JS, TypeScript, Tailwind CSS - Shadcn UI
-							</p>
+
+							{/* Arise for Christ Website */}
+							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-6 border border-slate-200 transition-shadow duration-300">
+								<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+									<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Arise for Christ Website</h4>
+									<div className="flex items-center gap-4">
+										<a
+											href="https://www.ariseforchrist.com/ro"
+											target="_blank"
+											rel="noopener noreferrer"
+											className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
+										>
+											<Globe className="h-4 w-4" />
+											<span>Live Site</span>
+											<ExternalLink className="h-4 w-4" />
+										</a>
+									</div>
+								</div>
+								<p className="text-slate-600 leading-relaxed">
+									Modern website for a Christian organization. Completely redesigned the layout, optimized for mobile,
+									and implemented a clean interface using Next.js and Tailwind CSS.
+								</p>
+								<p className="text-xs text-slate-500 mt-2">URL: https://www.ariseforchrist.com</p>
+							</div>
+
+							{/* Teens Arise for Christ */}
+							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-6 border border-slate-200 transition-shadow duration-300">
+								<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+									<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Teens Arise for Christ</h4>
+									<div className="flex items-center gap-4">
+										<a
+											href="https://teens-ariseforchrist.netlify.app/en"
+											target="_blank"
+											rel="noopener noreferrer"
+											className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
+										>
+											<Globe className="h-4 w-4" />
+											<span>Live Site</span>
+											<ExternalLink className="h-4 w-4" />
+										</a>
+									</div>
+								</div>
+								<p className="text-slate-600 leading-relaxed">
+									Youth-focused platform for Christian teens with interactive features and modern design.
+									Built with responsive layout and engaging user interface.
+								</p>
+								<p className="text-xs text-slate-500 mt-2">URL: https://teens-ariseforchrist.netlify.app</p>
+							</div>
+
+							{/* Philippine Arise for Christ */}
+							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-6 border border-slate-200 transition-shadow duration-300">
+								<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+									<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Philippine Arise for Christ</h4>
+									<div className="flex items-center gap-4">
+										<a
+											href="https://philippine-ariseforchrist.netlify.app/en"
+											target="_blank"
+											rel="noopener noreferrer"
+											className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
+										>
+											<Globe className="h-4 w-4" />
+											<span>Live Site</span>
+											<ExternalLink className="h-4 w-4" />
+										</a>
+									</div>
+								</div>
+								<p className="text-slate-600 leading-relaxed">
+									Regional website for Philippine Christian community with localized content and
+									culturally adapted design elements.
+								</p>
+								<p className="text-xs text-slate-500 mt-2">URL: https://philippine-ariseforchrist.netlify.app</p>
+							</div>
+
+							{/* Hebron AFC Home */}
+							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-6 border border-slate-200 transition-shadow duration-300">
+								<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+									<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Hebron AFC Home</h4>
+									<div className="flex items-center gap-4">
+										<a
+											href="https://hebronafchome.netlify.app/"
+											target="_blank"
+											rel="noopener noreferrer"
+											className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
+										>
+											<Globe className="h-4 w-4" />
+											<span>Live Site</span>
+											<ExternalLink className="h-4 w-4" />
+										</a>
+									</div>
+								</div>
+								<p className="text-slate-600 leading-relaxed">
+									Community platform with comprehensive information architecture and user-friendly navigation.
+									Focus on accessibility and performance optimization.
+								</p>
+								<p className="text-xs text-slate-500 mt-2">URL: https://hebronafchome.netlify.app/</p>
+							</div>
+
+							{/* Amicus Timisoara Form */}
+							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-6 border border-slate-200 transition-shadow duration-300">
+								<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+									<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Amicus Timisoara Form</h4>
+									<div className="flex items-center gap-4">
+										<a
+											href="https://amicustimisoara.netlify.app/"
+											target="_blank"
+											rel="noopener noreferrer"
+											className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
+										>
+											<Globe className="h-4 w-4" />
+											<span>Live Site</span>
+											<ExternalLink className="h-4 w-4" />
+										</a>
+									</div>
+								</div>
+								<p className="text-slate-600 leading-relaxed">
+									Interactive form application with Supabase backend integration. Features dynamic data validation,
+									real-time database operations, and comprehensive table management system.
+								</p>
+								<p className="text-xs text-slate-500 mt-2">URL: https://amicustimisoara.netlify.app/</p>
+							</div>
+
+							{/* Ice Cream Website */}
+							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-6 border border-slate-200 transition-shadow duration-300">
+								<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+									<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Ice Cream Website</h4>
+									<div className="flex items-center gap-4">
+										<a
+											href="https://dris11.github.io/Project-Ice-Cream/"
+											target="_blank"
+											rel="noopener noreferrer"
+											className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
+										>
+											<Globe className="h-4 w-4" />
+											<span>Live Site</span>
+											<ExternalLink className="h-4 w-4" />
+										</a>
+									</div>
+								</div>
+								<p className="text-slate-600 leading-relaxed">
+									Static landing page with attractive design created during Full Stack Developer course.
+									Worked on HTML structure, CSS animations, and JavaScript interactivity.
+								</p>
+								<p className="text-xs text-slate-500 mt-2">URL: https://dris11.github.io/Project-Ice-Cream/</p>
+							</div>
+
+
 						</div>
-
-
 					</section>
 
 					{/* Languages */}
 					<section>
-						<h3 className="mb-3 border-b border-slate-200 pb-2 text-2xl font-bold text-slate-800">
-							Languages
-						</h3>
-						<div className="flex gap-4 text-slate-600">
-							<span>Romanian (Native)</span>
-							<span>English (B1)</span>
+						<div className="flex items-center gap-3 mb-6">
+							<div className="h-8 w-1 bg-gradient-to-b from-blue-600 to-slate-600 rounded-full"></div>
+							<h3 className="text-3xl font-bold text-slate-800">Languages</h3>
+						</div>
+						<div className="flex flex-wrap gap-4">
+							<div className="flex items-center gap-3 bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg px-6 py-4 border border-slate-200">
+								<div className="h-3 w-3 bg-green-500 rounded-full"></div>
+								<span className="font-medium text-slate-700">Romanian (Native)</span>
+							</div>
+							<div className="flex items-center gap-3 bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg px-6 py-4 border border-slate-200">
+								<div className="h-3 w-3 bg-blue-500 rounded-full"></div>
+								<span className="font-medium text-slate-700">English (B1)</span>
+							</div>
 						</div>
 					</section>
 				</div>
 
 				{/* Footer */}
-				<footer className="bg-slate-100 p-4 text-center text-sm text-slate-500 print:hidden">
-					<p>© {new Date().getFullYear()} Florin Bejera</p>
+				<footer className="bg-gradient-to-r from-slate-100 to-blue-100 p-6 text-center text-sm text-slate-600 print:hidden border-t border-slate-200">
+					<p className="font-medium">© {new Date().getFullYear()} Florin Bejera - Frontend Developer</p>
+					<p className="mt-1 text-xs">Built with Next JS & Tailwind CSS</p>
 				</footer>
-			</div>
-		</main>
+			</div >
+		</main >
 	);
 }
