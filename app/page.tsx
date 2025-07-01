@@ -32,7 +32,7 @@ export default function CV() {
 	const experienceImages = [
 		{ src: image1, alt: "Formular de Colaborare", title: "Formular de Colaborare cu 20 de Întrebări" },
 		{ src: image, alt: "Portal Colaborare", title: "Afisarea Colaboratorilor în Portalul Arise for Christ" },
-		{ src: image2, alt: "Rugăciune", title: "Zid de Rugăciune - Interfață Principală" },
+		{ src: image2, alt: "Rugăciune", title: "Rugăciune - Interfață Principală" },
 		{ src: image4, alt: "Sistem de Autentificare", title: "Autentificare Google & Facebook" },
 		{ src: image3, alt: "Formular adauga rugaciune", title: "Formular de Adăugare Rugăciune" },
 	];
