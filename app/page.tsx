@@ -472,7 +472,7 @@ export default function CV() {
 
 						<div className="grid gap-6">
 							{/* Portal Arise for Christ */}
-							<div className="bg-gradient-to-r from-slate-50 to-red-50 rounded-xl p-3 border border-slate-200 flex gap-4">
+							<div className="bg-gradient-to-r from-slate-50 to-red-50 rounded-xl p-3 border border-slate-200 flex flex-col md:flex-row gap-4">
 								<div
 									className="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-200 hover:border-blue-300 transition-all duration-200"
 									onClick={() => openImageModal(7)}
@@ -480,7 +480,7 @@ export default function CV() {
 									<Image
 										src={image7}
 										alt="Portal Arise for Christ"
-										className="object-cover rounded-md"
+										className="object-cover rounded-md w-full md:w-52"
 										width={200}
 										height={100}
 									/>
@@ -507,7 +507,7 @@ export default function CV() {
 							</div>
 
 							{/* Site-ul Arise for Christ */}
-							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex gap-4">
+							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex flex-col md:flex-row gap-4">
 								<div
 									className="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-200 hover:border-blue-300 transition-all duration-200"
 									onClick={() => openImageModal(10)}
@@ -515,7 +515,7 @@ export default function CV() {
 									<Image
 										src={image9}
 										alt="Site-ul Arise for Christ"
-										className="object-cover rounded-md"
+										className="object-cover rounded-md  w-full md:w-52"
 										width={200}
 										height={100}
 									/>
@@ -551,7 +551,7 @@ export default function CV() {
 							</div>
 
 							{/* Filmoteka */}
-							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex gap-4">
+							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex flex-col md:flex-row gap-4">
 								<div
 									className="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-200 hover:border-blue-300 transition-all duration-200"
 									onClick={() => openImageModal(10)}
@@ -559,7 +559,7 @@ export default function CV() {
 									<Image
 										src={filmoteka}
 										alt="Filmoteka"
-										className="object-cover rounded-md"
+										className="object-cover rounded-md  w-full md:w-52"
 										width={200}
 										height={100}
 									/>
@@ -595,7 +595,7 @@ export default function CV() {
 							</div>
 
 							{/* Teens Arise for Christ */}
-							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex gap-4">
+							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex flex-col md:flex-row gap-4">
 								<div
 									className="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-200 hover:border-blue-300 transition-all duration-200"
 									onClick={() => openImageModal(11)}
@@ -603,7 +603,7 @@ export default function CV() {
 									<Image
 										src={teens}
 										alt="Teens Arise for Christ"
-										className="object-cover rounded-md"
+										className="object-cover rounded-md  w-full md:w-52"
 										width={200}
 										height={100}
 									/>
@@ -639,7 +639,7 @@ export default function CV() {
 							</div>
 
 							{/* Philippine Arise for Christ */}
-							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex gap-4">
+							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex flex-col md:flex-row gap-4">
 								<div
 									className="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-200 hover:border-blue-300 transition-all duration-200"
 									onClick={() => openImageModal(12)}
@@ -647,7 +647,7 @@ export default function CV() {
 									<Image
 										src={philippine}
 										alt="Philippine Arise for Christ"
-										className="object-cover rounded-md"
+										className="object-cover rounded-md  w-full md:w-52"
 										width={200}
 										height={100}
 									/>
@@ -683,7 +683,7 @@ export default function CV() {
 							</div>
 
 							{/* Hebron AFC Home */}
-							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex gap-4">
+							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex flex-col md:flex-row gap-4">
 								<div
 									className="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-200 hover:border-blue-300 transition-all duration-200"
 									onClick={() => openImageModal(13)}
@@ -691,7 +691,7 @@ export default function CV() {
 									<Image
 										src={hebron}
 										alt="Hebron AFC Home"
-										className="object-cover rounded-md"
+										className="object-cover rounded-md  w-full md:w-52"
 										width={200}
 										height={100}
 									/>
@@ -727,7 +727,7 @@ export default function CV() {
 							</div>
 
 							{/* Formular AMiCUS Timișoara */}
-							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex gap-4">
+							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex flex-col md:flex-row gap-4">
 								<div
 									className="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-200 hover:border-blue-300 transition-all duration-200"
 									onClick={() => openImageModal(14)}
@@ -735,7 +735,7 @@ export default function CV() {
 									<Image
 										src={amicus}
 										alt="Formular AMiCUS Timișoara"
-										className="object-cover rounded-md"
+										className="object-cover rounded-md  w-full md:w-52"
 										width={200}
 										height={100}
 									/>
@@ -771,7 +771,7 @@ export default function CV() {
 							</div>
 
 							{/* Site Inghetata */}
-							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex gap-4">
+							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex flex-col md:flex-row gap-4">
 								<div
 									className="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-200 hover:border-blue-300 transition-all duration-200"
 									onClick={() => openImageModal(15)}
@@ -779,7 +779,7 @@ export default function CV() {
 									<Image
 										src={ice}
 										alt="Site Inghetata"
-										className="object-cover rounded-md"
+										className="object-cover rounded-md  w-full md:w-52"
 										width={200}
 										height={100}
 									/>
