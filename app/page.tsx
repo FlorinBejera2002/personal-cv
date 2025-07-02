@@ -326,7 +326,7 @@ export default function CV() {
 								</div>
 								<div className="flex items-center gap-2 text-blue-600 font-medium">
 									<Calendar className="h-4 w-4" />
-									<span>Februarie 2023 - Prezent</span>
+									<span>Februarie 2024 - Prezent</span>
 								</div>
 							</div>
 
