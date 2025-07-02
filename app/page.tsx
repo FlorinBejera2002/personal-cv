@@ -159,7 +159,7 @@ export default function CV() {
 							<h3 className="text-3xl font-bold text-slate-800">Despre Mine</h3>
 						</div>
 						<p className="text-slate-600 text-lg leading-relaxed">
-							Am început să învăț în 2022. Am studiat dezvoltarea web timp de un an, după care am început să lucrez la Arise for Christ. Îmi place să lucrez la design-ul site-urilor și aplicațiilor. În timpul liber, îmi place să petrec timp în natură sau să fac sport.
+							Sunt pasionat de programare Frontend si am început să învăț în 2022. Am studiat dezvoltarea web timp de un an jumate, după care am început să lucrez la Arise for Christ. Îmi place să lucrez la design-ul site-urilor și aplicațiilor. În timpul liber, îmi place să petrec timp în natură sau să fac sport.
 						</p>
 					</section>
 
@@ -170,135 +170,135 @@ export default function CV() {
 							<h3 className="text-3xl font-bold text-slate-800">Abilități Tehnice</h3>
 						</div>
 						<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-							{[
-								{
-									name: 'Next.js',
-									icon: (
-										<Image
-											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/nextdotjs.svg"
-											alt="Next.js"
-											width={16}
-											height={16}
-											style={{ fill: '#000000' }}
-										/>
-									),
-								},
-								{
-									name: 'React',
-									icon: (
-										<Image
-											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/react.svg"
-											alt="React"
-											width={16}
-											height={16}
-											style={{ fill: '#61DAFB' }}
-										/>
-									),
-								},
-								{
-									name: 'TypeScript',
-									icon: (
-										<Image
-											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/typescript.svg"
-											alt="TypeScript"
-											width={16}
-											height={16}
-											style={{ fill: '#3178C6' }}
-										/>
-									),
-								},
-								{
-									name: 'JavaScript',
-									icon: (
-										<Image
-											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/javascript.svg"
-											alt="JavaScript"
-											width={16}
-											height={16}
-											style={{ fill: '#F7DF1E' }}
-										/>
-									),
-								},
-								{
-									name: 'Tailwind CSS',
-									icon: (
-										<Image
-											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/tailwindcss.svg"
-											alt="Tailwind CSS"
-											width={16}
-											height={16}
-											style={{ fill: '#38B2AC' }}
-										/>
-									),
-								},
-								{
-									name: 'HTML5',
-									icon: (
-										<Image
-											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/html5.svg"
-											alt="HTML5"
-											width={16}
-											height={16}
-											style={{ fill: '#E34F26' }}
-										/>
-									),
-								},
-								{
-									name: 'CSS3',
-									icon: (
-										<Image
-											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/css3.svg"
-											alt="CSS3"
-											width={16}
-											height={16}
-											style={{ fill: '#1572B6' }}
-										/>
-									),
-								},
-								{
-									name: 'SCSS',
-									icon: (
-										<Image
-											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/sass.svg"
-											alt="SCSS"
-											width={16}
-											height={16}
-											style={{ fill: '#CC6699' }}
-										/>
-									),
-								},
-								{
-									name: 'Git',
-									icon: (
-										<Image
-											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/git.svg"
-											alt="Git"
-											width={16}
-											height={16}
-											style={{ fill: '#F05032' }}
-										/>
-									),
-								},
-								{
-									name: 'REST APIs',
-									icon: <Server className="h-4 w-4 text-blue-600" />,
-								},
-								{
-									name: 'Design Responsiv',
-									icon: <MonitorSmartphone className="h-4 w-4 text-blue-600" />,
-								},
-								{
-									name: 'Supabase',
-									icon: (
-										<Image
-											src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/supabase.svg"
-											alt="Supabase"
-											width={16}
-											height={16}
-											style={{ fill: '#3ECF8E' }}
-										/>
-									),
-								},
+							{[{
+								name: 'React',
+								icon: (
+									<Image
+										src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/react.svg"
+										alt="React"
+										width={16}
+										height={16}
+										style={{ fill: '#61DAFB' }}
+									/>
+								),
+							},
+							{
+								name: 'Next.js',
+								icon: (
+									<Image
+										src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/nextdotjs.svg"
+										alt="Next.js"
+										width={16}
+										height={16}
+										style={{ fill: '#000000' }}
+									/>
+								),
+							},
+
+							{
+								name: 'TypeScript',
+								icon: (
+									<Image
+										src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/typescript.svg"
+										alt="TypeScript"
+										width={16}
+										height={16}
+										style={{ fill: '#3178C6' }}
+									/>
+								),
+							},
+							{
+								name: 'JavaScript',
+								icon: (
+									<Image
+										src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/javascript.svg"
+										alt="JavaScript"
+										width={16}
+										height={16}
+										style={{ fill: '#F7DF1E' }}
+									/>
+								),
+							},
+							{
+								name: 'Tailwind CSS',
+								icon: (
+									<Image
+										src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/tailwindcss.svg"
+										alt="Tailwind CSS"
+										width={16}
+										height={16}
+										style={{ fill: '#38B2AC' }}
+									/>
+								),
+							},
+							{
+								name: 'HTML5',
+								icon: (
+									<Image
+										src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/html5.svg"
+										alt="HTML5"
+										width={16}
+										height={16}
+										style={{ fill: '#E34F26' }}
+									/>
+								),
+							},
+							{
+								name: 'CSS3',
+								icon: (
+									<Image
+										src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/css3.svg"
+										alt="CSS3"
+										width={16}
+										height={16}
+										style={{ fill: '#1572B6' }}
+									/>
+								),
+							},
+							{
+								name: 'SCSS',
+								icon: (
+									<Image
+										src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/sass.svg"
+										alt="SCSS"
+										width={16}
+										height={16}
+										style={{ fill: '#CC6699' }}
+									/>
+								),
+							},
+							{
+								name: 'Git',
+								icon: (
+									<Image
+										src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/git.svg"
+										alt="Git"
+										width={16}
+										height={16}
+										style={{ fill: '#F05032' }}
+									/>
+								),
+							},
+							{
+								name: 'REST APIs',
+								icon: <Server className="h-4 w-4" />,
+							},
+							{
+								name: 'Design Responsiv',
+								icon: <MonitorSmartphone className="h-4 w-4" />,
+							},
+							{
+								name: 'Supabase',
+								icon: (
+									<Image
+										src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/supabase.svg"
+										alt="Supabase"
+										width={16}
+										height={16}
+										style={{ fill: '#3ECF8E' }}
+									/>
+								),
+							},
 							].map((skill) => (
 								<span
 									key={skill.name}
@@ -334,17 +334,6 @@ export default function CV() {
 								<p className="text-slate-600 mb-3">
 									În organizația Arise for Christ lucrez activ la:
 								</p>
-								{/* Website-ul principal */}
-								<h5 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
-									<div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-									Website-ul principal
-								</h5>
-								<ul className="text-sm text-slate-600 space-y-1 ml-4">
-									<li>• Am construit site-ul de la zero folosind React cu Next.js, pentru o arhitectură modernă și performantă.</li>
-									<li>• Pentru stilizare, utilizez Tailwind CSS, care permite dezvoltare rapidă și un design responsive, adaptat tuturor dispozitivelor.</li>
-									<li>• M-am asigurat că designul este curat și în concordanță cu valorile organizației.</li>
-								</ul>
-
 								{/* Portalul intern (CMS) */}
 								<h5 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
 									<div className="w-2 h-2 bg-green-500 rounded-full"></div>
@@ -356,6 +345,19 @@ export default function CV() {
 									<li>• Folosim React Query pentru o experiență fluidă, stocând datele în cache pentru citire rapidă și minimizarea apelurilor către backend.</li>
 									<li>• Portalul este conectat la un backend personalizat, cu baze de date gestionate prin Supabase.</li>
 								</ul>
+
+								{/* Website-ul principal */}
+								<h5 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
+									<div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+									Website-ul principal
+								</h5>
+								<ul className="text-sm text-slate-600 space-y-1 ml-4">
+									<li>• Am construit site-ul de la zero folosind React cu Next.js, pentru o arhitectură modernă și performantă.</li>
+									<li>• Pentru stilizare, utilizez Tailwind CSS, care permite dezvoltare rapidă și un design responsive, adaptat tuturor dispozitivelor.</li>
+									<li>• M-am asigurat că designul este curat și în concordanță cu valorile organizației.</li>
+								</ul>
+
+
 
 								{/* Rugăciune */}
 								<h5 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
