@@ -109,40 +109,41 @@ export default function CV() {
 									href="https://www.linkedin.com/in/florin-bejera-1b213b263/"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-sm hover:bg-white/25 transition-all duration-200 border border-white/20"
+									className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-xs hover:bg-white/25 transition-all duration-200 border border-white/20"
 								>
 									<Linkedin className="h-4 w-4" />
-									<span>LinkedIn</span>
+									<span> Florin Bejera
+									</span>
 								</a>
 								<a
 									href="https://github.com/FlorinBejera2002"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-sm hover:bg-white/25 transition-all duration-200 border border-white/20"
+									className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-xs hover:bg-white/25 transition-all duration-200 border border-white/20"
 								>
 									<Github className="h-4 w-4" />
-									<span>GitHub</span>
+									<span>FlorinBejera2002</span>
 								</a>
 								<a
-									href="mailto:florin2bejera@gmail.com"
-									className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-sm hover:bg-white/25 transition-all duration-200 border border-white/20"
+									href="mailto:florinpetru0306@gmail.com"
+									className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-xs hover:bg-white/25 transition-all duration-200 border border-white/20"
 								>
 									<Mail className="h-4 w-4" />
-									<span>Email</span>
+									<span className=''>florinpetru0306@gmail.com</span>
 								</a>
-								<span className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-sm border border-white/20">
+								<span className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-xs border border-white/20">
 									<MapPin className="h-4 w-4" />
 									<span>Timișoara, România</span>
 								</span>
 							</div>
 						</div>
 					</div>
-					<div className="absolute right-6 top-6 print:hidden">
+					<div className="absolute right-3 top-3 print:hidden">
 						<Button
 							onClick={() => window.print()}
 							variant="outline"
 							size="sm"
-							className="flex items-center gap-2 rounded-lg bg-white/20 backdrop-blur-sm px-4 py-2 text-sm font-medium text-white hover:bg-white/30 transition-all duration-200 border border-white/30"
+							className="flex items-center gap-2 rounded-lg bg-white/20 backdrop-blur-sm px-4 py-2 text-xs font-medium text-white hover:bg-white/30 transition-all duration-200 border border-white/30"
 						>
 							<Printer className="h-4 w-4" />
 							Printează CV
