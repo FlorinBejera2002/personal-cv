@@ -41,26 +41,24 @@ export default function CV() {
 	const [selectedImage, setSelectedImage] = useState<{ src: any; alt: string; title: string } | null>(null);
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-	// Imagini pentru experiență și proiecte
+	// Images for experience and projects
 	const experienceImages = [
 		{ src: image9, alt: "Philippine Arise for Christ", title: "Philippine Arise for Christ" },
-
-		{ src: image1, alt: "Formular de Colaborare", title: "Formular de Colaborare cu 20 de Întrebări" },
-		{ src: image2, alt: "Rugăciune", title: "Rugăciune - Interfață Principală" },
-		{ src: image3, alt: "Formular adauga rugaciune", title: "Formular de Adăugare Rugăciune" },
-		{ src: image4, alt: "Sistem de Autentificare", title: "Autentificare Google & Facebook" },
-		{ src: image5, alt: "Site-ul Arise for Christ", title: "Site-ul Arise for Christ" },
-		{ src: image6, alt: "Filmoteka", title: "Filmoteka - Catalog de filme" },
-		{ src: image7, alt: "Portal Arise for Christ", title: "Portal Arise for Christ" },
+		{ src: image1, alt: "Collaboration Form", title: "Collaboration Form with 20 Questions" },
+		{ src: image2, alt: "Prayer", title: "Prayer - Main Interface" },
+		{ src: image3, alt: "Add Prayer Form", title: "Add Prayer Form" },
+		{ src: image4, alt: "Authentication System", title: "Google & Facebook Authentication" },
+		{ src: image5, alt: "Arise for Christ Website", title: "Arise for Christ Website" },
+		{ src: image6, alt: "Filmoteka", title: "Filmoteka - Movie Catalog" },
+		{ src: image7, alt: "Arise for Christ Portal", title: "Arise for Christ Portal" },
 		{ src: image8, alt: "Teens Arise for Christ", title: "Teens Arise for Christ" },
-		{ src: image, alt: "Portal Colaborare", title: "Afișarea Colaboratorilor în Portalul Arise for Christ" },
-
-		{ src: filmoteka, alt: "Filmoteka", title: "Filmoteka - Catalog de filme" },
+		{ src: image, alt: "Collaboration Portal", title: "Displaying Collaborators in the Arise for Christ Portal" },
+		{ src: filmoteka, alt: "Filmoteka", title: "Filmoteka - Movie Catalog" },
 		{ src: teens, alt: "Teens Arise for Christ", title: "Teens Arise for Christ" },
 		{ src: philippine, alt: "Philippine Arise for Christ", title: "Philippine Arise for Christ" },
 		{ src: hebron, alt: "Hebron AFC Home", title: "Hebron AFC Home" },
-		{ src: amicus, alt: "Formular AMiCUS Timișoara", title: "Formular AMiCUS Timișoara" },
-		{ src: ice, alt: "Site Inghetata", title: "Site Inghetata" },
+		{ src: amicus, alt: "AMiCUS Timișoara Form", title: "AMiCUS Timișoara Form" },
+		{ src: ice, alt: "Ice Cream Website", title: "Ice Cream Website" },
 	];
 
 	const openImageModal = (imageIndex: number) => {
@@ -82,9 +80,9 @@ export default function CV() {
 	};
 
 	return (
-		<main className="min-h-screen bg-gradient-to-br from-slate-50 to-blueស-50 py-8 print:py-0 print:bg-white">
+		<main className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-8 print:py-0 print:bg-white">
 			<div className="container mx-auto max-w-5xl bg-white shadow-2xl print:shadow-none rounded-lg overflow-hidden">
-				{/* Antet */}
+				{/* Header */}
 				<header className="relative bg-slate-800 px-8 py-16 text-white">
 					<div className="flex flex-col lg:flex-row lg:items-center gap-8">
 						<div className="flex justify-center lg:justify-start">
@@ -102,7 +100,7 @@ export default function CV() {
 								Florin Bejera
 							</h1>
 							<h2 className="mb-6 text-center text-2xl font-light lg:text-left text-blue-100">
-								Programator Frontend
+								Frontend Developer
 							</h2>
 							<div className="flex flex-wrap justify-center gap-3 lg:justify-start">
 								<a
@@ -112,8 +110,7 @@ export default function CV() {
 									className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-xs hover:bg-white/25 transition-all duration-200 border border-white/20"
 								>
 									<Linkedin className="h-4 w-4" />
-									<span> Florin Bejera
-									</span>
+									<span>Florin Bejera</span>
 								</a>
 								<a
 									href="https://github.com/FlorinBejera2002"
@@ -129,11 +126,11 @@ export default function CV() {
 									className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-xs hover:bg-white/25 transition-all duration-200 border border-white/20"
 								>
 									<Mail className="h-4 w-4" />
-									<span className=''>florinpetru0306@gmail.com</span>
+									<span>florinpetru0306@gmail.com</span>
 								</a>
 								<span className="flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 text-xs border border-white/20">
 									<MapPin className="h-4 w-4" />
-									<span>Timișoara, România</span>
+									<span>Timișoara, Romania</span>
 								</span>
 							</div>
 						</div>
@@ -146,29 +143,29 @@ export default function CV() {
 							className="flex items-center gap-2 rounded-lg bg-white/20 backdrop-blur-sm px-4 py-2 text-xs font-medium text-white hover:bg-white/30 transition-all duration-200 border border-white/30"
 						>
 							<Printer className="h-4 w-4" />
-							Printează CV
+							Print CV
 						</Button>
 					</div>
 				</header>
 
-				{/* Conținut Principal */}
+				{/* Main Content */}
 				<div className="p-8 lg:p-12">
-					{/* Despre Mine */}
+					{/* About Me */}
 					<section className="mb-10">
 						<div className="flex items-center gap-3 mb-6">
 							<div className="h-8 w-1 bg-gradient-to-b from-blue-600 to-slate-600 rounded-full"></div>
-							<h3 className="text-3xl font-bold text-slate-800">Despre Mine</h3>
+							<h3 className="text-3xl font-bold text-slate-800">About Me</h3>
 						</div>
 						<p className="text-slate-600 text-lg leading-relaxed">
-							Sunt pasionat de programare Frontend si am început să învăț în 2022. Am studiat dezvoltarea web timp de un an jumate, după care am început să lucrez la Arise for Christ. Îmi place să lucrez la design-ul site-urilor și aplicațiilor. În timpul liber, îmi place să petrec timp în natură sau să fac sport.
+							I am passionate about Frontend programming and started learning in 2022. I studied web development for one and a half years, after which I began working at Arise for Christ. I enjoy working on the design of websites and applications. In my free time, I like to spend time in nature or play sports.
 						</p>
 					</section>
 
-					{/* Abilități */}
+					{/* Skills */}
 					<section className="mb-10">
 						<div className="flex items-center gap-3 mb-6">
 							<div className="h-8 w-1 bg-gradient-to-b from-blue-600 to-slate-600 rounded-full"></div>
-							<h3 className="text-3xl font-bold text-slate-800">Abilități Tehnice</h3>
+							<h3 className="text-3xl font-bold text-slate-800">Technical Skills</h3>
 						</div>
 						<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
 							{[{
@@ -195,7 +192,6 @@ export default function CV() {
 									/>
 								),
 							},
-
 							{
 								name: 'TypeScript',
 								icon: (
@@ -285,7 +281,7 @@ export default function CV() {
 								icon: <Server className="h-4 w-4" />,
 							},
 							{
-								name: 'Design Responsiv',
+								name: 'Responsive Design',
 								icon: <MonitorSmartphone className="h-4 w-4" />,
 							},
 							{
@@ -312,96 +308,93 @@ export default function CV() {
 						</div>
 					</section>
 
-					{/* Experiență */}
+					{/* Experience */}
 					<section className="mb-10">
 						<div className="flex items-center gap-3 mb-6">
 							<div className="h-8 w-1 bg-gradient-to-b from-blue-600 to-slate-600 rounded-full"></div>
-							<h3 className="text-3xl font-bold text-slate-800">Experiență</h3>
+							<h3 className="text-3xl font-bold text-slate-800">Experience</h3>
 						</div>
 
 						<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 mb-6">
 							<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
 								<div>
-									<p className="text-blue-600 font-medium mb-1">Organizația Arise for Christ</p>
-									<h4 className="text-xl font-semibold text-slate-700">Programator Frontend</h4>
+									<p className="text-blue-600 font-medium mb-1">Arise for Christ Organization</p>
+									<h4 className="text-xl font-semibold text-slate-700">Frontend Developer</h4>
 								</div>
 								<div className="flex items-center gap-2 text-blue-600 font-medium">
 									<Calendar className="h-4 w-4" />
-									<span>Februarie 2024 - Prezent</span>
+									<span>February 2024 - Present</span>
 								</div>
 							</div>
 
 							<div className="space-y-6">
 								<p className="text-slate-600 mb-3">
-									În organizația Arise for Christ lucrez activ la:
+									At the Arise for Christ organization, I actively work on:
 								</p>
-								{/* Portalul intern (CMS) */}
+								{/* Internal Portal (CMS) */}
 								<h5 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
 									<div className="w-2 h-2 bg-green-500 rounded-full"></div>
-									Portalul intern (CMS)
+									Internal Portal (CMS)
 								</h5>
 								<ul className="text-sm text-slate-600 space-y-1 ml-4">
-									<li>• Lucrez la dezvoltarea unei platforme CMS (Content Management System) menite să faciliteze administrarea eficientă a conținutului și a datelor organizației.</li>
-									<li>• Am implementat funcționalități CRUD (Create, Read, Update, Delete) pentru diverse tipuri de informații: colaboratori, formulare, cereri de evanghelizare, statistici etc.</li>
-									<li>• Folosim React Query pentru o experiență fluidă, stocând datele în cache pentru citire rapidă și minimizarea apelurilor către backend.</li>
-									<li>• Portalul este conectat la un backend personalizat, cu baze de date gestionate prin Supabase.</li>
+									<li>• Working on the development of a CMS (Content Management System) platform to facilitate efficient content and data management for the organization.</li>
+									<li>• Implemented CRUD (Create, Read, Update, Delete) functionalities for various types of information: collaborators, forms, evangelization requests, statistics, etc.</li>
+									<li>• Using React Query for a smooth experience, caching data for fast retrieval and minimizing backend calls.</li>
+									<li>• The portal is connected to a custom backend, with databases managed through Supabase.</li>
 								</ul>
 
-								{/* Website-ul principal */}
+								{/* Main Website */}
 								<h5 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
 									<div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-									Website-ul principal
+									Main Website
 								</h5>
 								<ul className="text-sm text-slate-600 space-y-1 ml-4">
-									<li>• Am construit site-ul de la zero folosind React cu Next.js, pentru o arhitectură modernă și performantă.</li>
-									<li>• Pentru stilizare, utilizez Tailwind CSS, care permite dezvoltare rapidă și un design responsive, adaptat tuturor dispozitivelor.</li>
-									<li>• M-am asigurat că designul este curat și în concordanță cu valorile organizației.</li>
+									<li>• Built the website from scratch using React with Next.js, for a modern and performant architecture.</li>
+									<li>• For styling, I use Tailwind CSS, enabling rapid development and responsive design adapted to all devices.</li>
+									<li>• Ensured the design is clean and aligns with the organization’s values.</li>
 								</ul>
 
-
-
-								{/* Rugăciune */}
+								{/* Prayer */}
 								<h5 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
 									<div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-									Rugăciune
+									Prayer
 								</h5>
 								<p className="text-slate-600 mb-3">
-									O pagină dedicată persoanelor care doresc să adauge motive de rugăciune sau să se roage pentru rugăciunile altora.
+									A dedicated page for individuals who wish to add prayer requests or pray for others’ prayers.
 								</p>
 								<div className="space-y-2">
-									<p className="text-sm text-slate-700"><span className="font-medium">Funcționalități principale:</span></p>
+									<p className="text-sm text-slate-700"><span className="font-medium">Main Features:</span></p>
 									<ul className="text-sm text-slate-600 space-y-1 ml-4">
-										<li>• Afișarea unei liste cu toate rugăciunile adăugate</li>
-										<li>• Buton „Mă rog” pentru a arăta susținerea față de un motiv de rugăciune</li>
-										<li>• Autentificare prin Google sau Facebook</li>
-										<li>• Formular pentru adăugarea unui motiv de rugăciune, cu opțiunea de a rămâne anonim</li>
-										<li>• Administrarea conținutului: adăugare și ștergere de răspunsuri sau rugăciuni</li>
-										<li>• Gestionarea datelor prin backend dedicat, cu stocare în tabele Supabase</li>
+										<li>• Displaying a list of all added prayers</li>
+										<li>• “I’m praying” button to show support for a prayer request</li>
+										<li>• Authentication via Google or Facebook</li>
+										<li>• Form for adding a prayer request, with the option to remain anonymous</li>
+										<li>• Content management: adding and deleting responses or prayers</li>
+										<li>• Data management through a dedicated backend, with storage in Supabase tables</li>
 									</ul>
 								</div>
 
-								{/* Colaborează cu Echipa Arise for Christ */}
+								{/* Collaborate with the Arise for Christ Team */}
 								<h5 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
 									<div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-									Colaborează cu Echipa Arise for Christ
+									Collaborate with the Arise for Christ Team
 								</h5>
 								<p className="text-slate-600 mb-3">
-									O pagină dedicată persoanelor care doresc să se implice în misiunea Arise for Christ și să colaboreze cu echipa.
+									A dedicated page for individuals who wish to get involved in the Arise for Christ mission and collaborate with the team.
 								</p>
 								<div className="space-y-2">
-									<p className="text-sm text-slate-700"><span className="font-medium">Funcționalități principale:</span></p>
+									<p className="text-sm text-slate-700"><span className="font-medium">Main Features:</span></p>
 									<ul className="text-sm text-slate-600 space-y-1 ml-4">
-										<li>• Formular cu 20 de întrebări implementat pe site</li>
-										<li>• Întrebările sunt organizate pe slide-uri și categorii, pentru o experiență structurată</li>
-										<li>• Conectare la backend, cu stocarea datelor în tabele Supabase</li>
-										<li>• Afișarea datelor colaboratorilor în Portalul Arise for Christ</li>
-										<li>• Componentă reutilizabilă pentru adăugarea și actualizarea colaboratorilor</li>
-										<li>• Funcționalități de ștergere și generare de PDF-uri cu informațiile colaboratorilor</li>
+										<li>• Form with 20 questions implemented on the website</li>
+										<li>• Questions organized into slides and categories for a structured experience</li>
+										<li>• Backend connection, with data storage in Supabase tables</li>
+										<li>• Displaying collaborator data in the Arise for Christ Portal</li>
+										<li>• Reusable component for adding and updating collaborators</li>
+										<li>• Deletion and PDF generation functionalities for collaborator information</li>
 									</ul>
 								</div>
 
-								{/* Galeria de Imagini a Proiectelor */}
-
+								{/* Project Image Gallery */}
 								<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
 									{experienceImages.slice(0, 10).map((image, index) => (
 										<div
@@ -426,61 +419,96 @@ export default function CV() {
 						<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200">
 							<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
 								<div>
-									<p className="text-blue-600 font-medium mb-1">Academia GoIT</p>
-									<h4 className="text-xl font-semibold text-slate-700">Curs Programator Full Stack</h4>
+									<p className="text-blue-600 font-medium mb-1">GoIT Academy</p>
+									<h4 className="text-xl font-semibold text-slate-700">Full Stack Developer Course</h4>
 								</div>
 								<div className="flex items-center gap-2 text-blue-600 font-medium">
 									<Calendar className="h-4 w-4" />
-									<span>Ianuarie 2022 - Decembrie 2022</span>
+									<span>January 2022 - December 2022</span>
 								</div>
 							</div>
 							<p className="text-slate-600 mb-3">
-								În cadrul cursului am învățat limbajele HTML, CSS, SCSS, JavaScript și Node.js.
+								During the course, I learned HTML, CSS, SCSS, JavaScript, and Node.js.
 							</p>
 							<p className="text-slate-600 mb-3">
-								De asemenea, am avut ocazia să învăț să lucrez în echipă.
+								I also had the opportunity to learn how to work in a team.
 							</p>
 							<p className="text-slate-600 mb-3">
-								Pe lângă curs, am învățat mult și alături de câțiva prieteni care m-au ghidat în alegerea materialelor și ce să studiez.
+								In addition to the course, I learned a lot alongside a few friends who guided me in choosing materials and what to study.
 							</p>
 						</div>
 					</section>
 
-					{/* Certificări */}
+					{/* Certifications */}
 					<section className="mb-10">
 						<div className="flex items-center gap-3 mb-6">
 							<div className="h-8 w-1 bg-gradient-to-b from-blue-600 to-slate-600 rounded-full"></div>
-							<h3 className="text-3xl font-bold text-slate-800">Certificări</h3>
+							<h3 className="text-3xl font-bold text-slate-800">Certifications</h3>
 						</div>
 						<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200">
 							<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-								<h4 className="text-xl font-semibold text-slate-700">Curs Programator Full Stack</h4>
+								<h4 className="text-xl font-semibold text-slate-700">Full Stack Developer Course</h4>
 								<div className="flex items-center gap-2 text-blue-600 font-medium">
 									<Calendar className="h-4 w-4" />
 									<span>2022-2023</span>
 								</div>
 							</div>
-							<p className="text-slate-600 font-medium">Academia GoIT</p>
+							<p className="text-slate-600 font-medium">GoIT Academy</p>
 						</div>
 					</section>
 
-					{/* Proiecte */}
+					{/* Projects */}
 					<section className="mb-10">
 						<div className="flex items-center gap-3 mb-6">
 							<div className="h-8 w-1 bg-gradient-to-b from-blue-600 to-slate-600 rounded-full"></div>
-							<h3 className="text-3xl font-bold text-slate-800">Proiecte</h3>
+							<h3 className="text-3xl font-bold text-slate-800">Projects</h3>
 						</div>
 
 						<div className="grid gap-6">
-							{/* Portal Arise for Christ */}
-							<div className="bg-gradient-to-r from-slate-50 to-red-50 rounded-xl p-3 border border-slate-200 flex flex-col md:flex-row gap-4">
+							{/* Arise for Christ Portal */}
+							<div className="bg-gradient-to-r from-slate-50 to-red-50 rounded-xl p-3 border border-slate-200 flex flex-col md:flex-row gap-4 w-full">
 								<div
-									className="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-200 hover:border-blue-300 transition-all duration-200"
+									className="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-200 hover:border-blue-300 transition-all duration-200 w-fit"
 									onClick={() => openImageModal(7)}
 								>
 									<Image
 										src={image7}
-										alt="Portal Arise for Christ"
+										alt="Arise for Christ Portal"
+										className="object-cover rounded-md w-full md:w-52"
+										width={200}
+										height={100}
+									/>
+									<div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-200 flex items-center justify-center">
+										<div className="opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+											<div className="bg-white rounded-full p-2 shadow-lg">
+												<ExternalLink className="h-4 w-4 text-slate-600" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div className="flex-1 w-full">
+									<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+										<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Arise for Christ Portal</h4>
+										<div className="flex items-center gap-2 text-red-600 font-medium">
+											<Lock className="h-4 w-4" />
+											<span>Private</span>
+										</div>
+									</div>
+									<p className="text-slate-600 leading-relaxed">
+										Internal portal for efficient data management, built with Vite and TypeScript, using the Shadcn interface. Integrated with a backend for real-time updates.
+									</p>
+								</div>
+							</div>
+
+							{/* Arise for Christ Website */}
+							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex flex-col md:flex-row gap-4">
+								<div
+									className="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-200 hover:border-blue-300 transition-all duration-200"
+									onClick={() => openImageModal(10)}
+								>
+									<Image
+										src={image9}
+										alt="Arise for Christ Website"
 										className="object-cover rounded-md w-full md:w-52"
 										width={200}
 										height={100}
@@ -495,42 +523,7 @@ export default function CV() {
 								</div>
 								<div className="flex-1">
 									<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
-										<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Portal Arise for Christ</h4>
-										<div className="flex items-center gap-2 text-red-600 font-medium">
-											<Lock className="h-4 w-4" />
-											<span>Privat</span>
-										</div>
-									</div>
-									<p className="text-slate-600 leading-relaxed">
-										Portal intern pentru gestionarea eficientă a datelor, construit cu Vite și TypeScript, folosind interfața Shadcn. Integrat cu backend pentru actualizări în timp real.
-									</p>
-								</div>
-							</div>
-
-							{/* Site-ul Arise for Christ */}
-							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex flex-col md:flex-row gap-4">
-								<div
-									className="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-200 hover:border-blue-300 transition-all duration-200"
-									onClick={() => openImageModal(10)}
-								>
-									<Image
-										src={image9}
-										alt="Site-ul Arise for Christ"
-										className="object-cover rounded-md  w-full md:w-52"
-										width={200}
-										height={100}
-									/>
-									<div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-200 flex items-center justify-center">
-										<div className="opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-											<div className="bg-white rounded-full p-2 shadow-lg">
-												<ExternalLink className="h-4 w-4 text-slate-600" />
-											</div>
-										</div>
-									</div>
-								</div>
-								<div className="flex-1">
-									<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
-										<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Site-ul Arise for Christ</h4>
+										<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Arise for Christ Website</h4>
 										<div className="flex items-center gap-4">
 											<a
 												href="https://www.ariseforchrist.com/ro"
@@ -539,13 +532,13 @@ export default function CV() {
 												className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
 											>
 												<Globe className="h-4 w-4" />
-												<span>Site Live</span>
+												<span>Live Website</span>
 												<ExternalLink className="h-4 w-4" />
 											</a>
 										</div>
 									</div>
 									<p className="text-slate-600 leading-relaxed">
-										Site pentru organizația Arise for Christ. Am făcut totul de la zero folosind Next.js și Tailwind CSS.
+										Website for the Arise for Christ organization. Built from scratch using Next.js and Tailwind CSS.
 									</p>
 									<p className="text-xs text-slate-500 mt-2">URL: https://www.ariseforchrist.com</p>
 								</div>
@@ -560,7 +553,7 @@ export default function CV() {
 									<Image
 										src={filmoteka}
 										alt="Filmoteka"
-										className="object-cover rounded-md  w-full md:w-52"
+										className="object-cover rounded-md w-full md:w-52"
 										width={200}
 										height={100}
 									/>
@@ -583,13 +576,13 @@ export default function CV() {
 												className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
 											>
 												<Globe className="h-4 w-4" />
-												<span>Site Live</span>
+												<span>Live Website</span>
 												<ExternalLink className="h-4 w-4" />
 											</a>
 										</div>
 									</div>
 									<p className="text-slate-600 leading-relaxed">
-										Catalog de filme, realizat împreună cu echipa din cadrul cursului de Programator Full Stack.
+										Movie catalog, created together with the team during the Full Stack Developer course.
 									</p>
 									<p className="text-xs text-slate-500 mt-2">URL: https://cristina-irina.github.io/Filmoteka/index.html</p>
 								</div>
@@ -604,7 +597,7 @@ export default function CV() {
 									<Image
 										src={teens}
 										alt="Teens Arise for Christ"
-										className="object-cover rounded-md  w-full md:w-52"
+										className="object-cover rounded-md w-full md:w-52"
 										width={200}
 										height={100}
 									/>
@@ -627,13 +620,13 @@ export default function CV() {
 												className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
 											>
 												<Globe className="h-4 w-4" />
-												<span>Site Live</span>
+												<span>Live Website</span>
 												<ExternalLink className="h-4 w-4" />
 											</a>
 										</div>
 									</div>
 									<p className="text-slate-600 leading-relaxed">
-										Website de prezentare pentru organizația Arise for Christ Teens din America.
+										Presentation website for the Arise for Christ Teens organization in America.
 									</p>
 									<p className="text-xs text-slate-500 mt-2">URL: https://teens-ariseforchrist.netlify.app</p>
 								</div>
@@ -648,7 +641,7 @@ export default function CV() {
 									<Image
 										src={philippine}
 										alt="Philippine Arise for Christ"
-										className="object-cover rounded-md  w-full md:w-52"
+										className="object-cover rounded-md w-full md:w-52"
 										width={200}
 										height={100}
 									/>
@@ -671,13 +664,13 @@ export default function CV() {
 												className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
 											>
 												<Globe className="h-4 w-4" />
-												<span>Site Live</span>
+												<span>Live Website</span>
 												<ExternalLink className="h-4 w-4" />
 											</a>
 										</div>
 									</div>
 									<p className="text-slate-600 leading-relaxed">
-										Website de prezentare pentru organizația Arise for Christ Filipine.
+										Presentation website for the Arise for Christ Philippines organization.
 									</p>
 									<p className="text-xs text-slate-500 mt-2">URL: https://philippine-ariseforchrist.netlify.app</p>
 								</div>
@@ -692,7 +685,7 @@ export default function CV() {
 									<Image
 										src={hebron}
 										alt="Hebron AFC Home"
-										className="object-cover rounded-md  w-full md:w-52"
+										className="object-cover rounded-md w-full md:w-52"
 										width={200}
 										height={100}
 									/>
@@ -715,19 +708,19 @@ export default function CV() {
 												className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
 											>
 												<Globe className="h-4 w-4" />
-												<span>Site Live</span>
+												<span>Live Website</span>
 												<ExternalLink className="h-4 w-4" />
 											</a>
 										</div>
 									</div>
 									<p className="text-slate-600 leading-relaxed">
-										Site simplu de prezentare pentru o companie americană.
+										Simple presentation website for an American company.
 									</p>
 									<p className="text-xs text-slate-500 mt-2">URL: https://hebronafchome.netlify.app/</p>
 								</div>
 							</div>
 
-							{/* Formular AMiCUS Timișoara */}
+							{/* AMiCUS Timișoara Form */}
 							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex flex-col md:flex-row gap-4">
 								<div
 									className="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-200 hover:border-blue-300 transition-all duration-200"
@@ -735,8 +728,8 @@ export default function CV() {
 								>
 									<Image
 										src={amicus}
-										alt="Formular AMiCUS Timișoara"
-										className="object-cover rounded-md  w-full md:w-52"
+										alt="AMiCUS Timișoara Form"
+										className="object-cover rounded-md w-full md:w-52"
 										width={200}
 										height={100}
 									/>
@@ -750,7 +743,7 @@ export default function CV() {
 								</div>
 								<div className="flex-1">
 									<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
-										<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Formular AMiCUS Timișoara</h4>
+										<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">AMiCUS Timișoara Form</h4>
 										<div className="flex items-center gap-4">
 											<a
 												href="https://amicustimisoara.netlify.app/"
@@ -759,19 +752,19 @@ export default function CV() {
 												className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
 											>
 												<Globe className="h-4 w-4" />
-												<span>Site Live</span>
+												<span>Live Website</span>
 												<ExternalLink className="h-4 w-4" />
 											</a>
 										</div>
 									</div>
 									<p className="text-slate-600 leading-relaxed">
-										Formular simplu de înregistrare integrat cu Supabase pentru colectarea datelor.
+										Simple registration form integrated with Supabase for data collection.
 									</p>
 									<p className="text-xs text-slate-500 mt-2">URL: https://amicustimisoara.netlify.app/</p>
 								</div>
 							</div>
 
-							{/* Site Inghetata */}
+							{/* Ice Cream Website */}
 							<div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl p-3 border border-slate-200 transition-shadow duration-300 flex flex-col md:flex-row gap-4">
 								<div
 									className="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-200 hover:border-blue-300 transition-all duration-200"
@@ -779,8 +772,8 @@ export default function CV() {
 								>
 									<Image
 										src={ice}
-										alt="Site Inghetata"
-										className="object-cover rounded-md  w-full md:w-52"
+										alt="Ice Cream Website"
+										className="object-cover rounded-md w-full md:w-52"
 										width={200}
 										height={100}
 									/>
@@ -794,7 +787,7 @@ export default function CV() {
 								</div>
 								<div className="flex-1">
 									<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
-										<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Site Inghetata</h4>
+										<h4 className="text-xl font-semibold text-slate-700 mb-2 sm:mb-0">Ice Cream Website</h4>
 										<div className="flex items-center gap-4">
 											<a
 												href="https://dris11.github.io/Project-Ice-Cream/"
@@ -803,14 +796,13 @@ export default function CV() {
 												className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
 											>
 												<Globe className="h-4 w-4" />
-												<span>Site Live</span>
+												<span>Live Website</span>
 												<ExternalLink className="h-4 w-4" />
 											</a>
 										</div>
 									</div>
 									<p className="text-slate-600 leading-relaxed">
-										Pagină de aterizare statică cu design atractiv creată în timpul cursului de Programator Full Stack.
-										Am lucrat cu o echipă la structura HTML, animații CSS și interactivitate JavaScript.
+										Static landing page with an attractive design created during the Full Stack Developer course. I worked with a team on HTML structure, CSS animations, and JavaScript interactivity.
 									</p>
 									<p className="text-xs text-slate-500 mt-2">URL: https://dris11.github.io/Project-Ice-Cream/</p>
 								</div>
@@ -818,37 +810,37 @@ export default function CV() {
 						</div>
 					</section>
 
-					{/* Limbi */}
+					{/* Languages */}
 					<section>
 						<div className="flex items-center gap-3 mb-6">
 							<div className="h-8 w-1 bg-gradient-to-b from-blue-600 to-slate-600 rounded-full"></div>
-							<h3 className="text-3xl font-bold text-slate-800">Limbi</h3>
+							<h3 className="text-3xl font-bold text-slate-800">Languages</h3>
 						</div>
 						<div className="flex flex-wrap gap-4">
 							<div className="flex items-center gap-3 bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg px-6 py-4 border border-slate-200">
 								<div className="h-3 w-3 bg-green-500 rounded-full"></div>
-								<span className="font-medium text-slate-700">Română (Nativ)</span>
+								<span className="font-medium text-slate-700">Romanian (Native)</span>
 							</div>
 							<div className="flex items-center gap-3 bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg px-6 py-4 border border-slate-200">
 								<div className="h-3 w-3 bg-blue-500 rounded-full"></div>
-								<span className="font-medium text-slate-700">Engleză (B1)</span>
+								<span className="font-medium text-slate-700">English (B1)</span>
 							</div>
 						</div>
 					</section>
 				</div>
 
-				{/* Subsol */}
+				{/* Footer */}
 				<footer className="bg-gradient-to-r from-slate-100 to-blue-100 p-6 text-center text-sm text-slate-600 print:hidden border-t border-slate-200">
-					<p className="font-medium">© {new Date().getFullYear()} Florin Bejera - Programator Frontend</p>
-					<p className="mt-1 text-xs">Construit cu Next.js și Tailwind CSS</p>
+					<p className="font-medium">© {new Date().getFullYear()} Florin Bejera - Frontend Developer</p>
+					<p className="mt-1 text-xs">Built with Next.js and Tailwind CSS</p>
 				</footer>
 			</div>
 
-			{/* Modal Imagine */}
+			{/* Image Modal */}
 			{selectedImage && (
 				<div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
 					<div className="relative max-w-4xl max-h-fit bg-white rounded-lg overflow-hidden">
-						{/* Buton Închidere */}
+						{/* Close Button */}
 						<button
 							onClick={closeImageModal}
 							className="absolute top-4 right-4 z-10 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-all duration-200"
@@ -856,7 +848,7 @@ export default function CV() {
 							<X className="h-6 w-6" />
 						</button>
 
-						{/* Săgeți de Navigare */}
+						{/* Navigation Arrows */}
 						<button
 							onClick={() => navigateImage('prev')}
 							className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 hover:bg-black/70 text-white rounded-full p-3 transition-all duration-200"
@@ -871,16 +863,16 @@ export default function CV() {
 							<ChevronRight className="h-6 w-6" />
 						</button>
 
-						{/* Imagine */}
+						{/* Image */}
 						<div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
 							<Image src={selectedImage.src} alt={selectedImage.alt} width={800} height={600} />
 						</div>
 
-						{/* Titlu Imagine în Jos */}
+						{/* Image Title Below */}
 						<div className="bg-white p-4 border-t">
 							<h4 className="font-semibold text-slate-800">{selectedImage.title}</h4>
 							<p className="text-sm text-slate-600 mt-1">
-								{currentImageIndex + 1} din {experienceImages.length}
+								{currentImageIndex + 1} of {experienceImages.length}
 							</p>
 						</div>
 					</div>
